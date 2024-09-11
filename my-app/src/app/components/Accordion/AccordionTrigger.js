@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import clsx from "clsx";
+import { inter } from "@/app/fonts";
 export default function AccordionTrigger({
     children,
     collapseIconType,
@@ -83,7 +84,7 @@ export default function AccordionTrigger({
         >
             <div className="flex items-center">
                 {renderIsLeftIcon()}
-                <h4 className="font-normal md:font-medium text-sm md:text-base text-[#090D14]">
+                <h4 className={`font-normal md:font-medium text-sm md:text-base text-[#090D14] ${inter.className}`}>
                     {children}
                 </h4>
             </div>
